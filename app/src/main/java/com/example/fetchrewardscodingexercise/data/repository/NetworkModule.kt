@@ -15,7 +15,7 @@ object NetworkModule {
     @Provides
     @Singleton
     fun provideRetrofit(): Retrofit {
-        return Retrofit.Builder().baseUrl("https://fetch-hiring.s3.amazonaws.com")
+        return Retrofit.Builder().baseUrl("https://hiring.fetch.com/")
             .addConverterFactory(GsonConverterFactory.create()).build()
     }
 
